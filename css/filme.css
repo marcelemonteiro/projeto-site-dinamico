@@ -1,0 +1,118 @@
+.filme {
+   margin: 0 auto;
+   position: relative;
+}
+
+.filme__poster {
+   margin: 0 auto;
+   padding: 1rem;
+}
+
+.filme__poster img {
+   width: 11rem;
+   height: auto;
+   box-shadow: 2px 2px 7px #222222;
+}
+
+.filme__info {
+   padding: 1rem;
+}
+
+.filme__info h1 {
+   text-transform: uppercase;
+}
+
+.filme__notaimdb {
+   display: flex;
+   align-items: center;
+}
+
+.filme__notaimdb img {
+   margin: .5rem 1rem .5rem 0;
+}
+
+.filme__opcoes {
+   margin: 2rem 0;
+}
+
+.filme__opcoes .btn {
+   width: 8rem;
+   border-radius: .5rem;
+}
+
+.filme__trailer {
+   position: relative;
+   padding: 1rem 1rem 4rem 1rem;
+   background-color: #222;
+}
+
+.filme__trailer h1 {
+   text-align: center;
+   margin: 2rem;
+   color: #ddd;
+}
+
+.filme__trailer iframe {
+   max-width: 18rem;
+   max-height: 10rem;
+}
+
+.comentarios {
+   position: relative;
+}
+
+.comentarios .titulo {
+   color: #222;
+   font-size: var(--font-lg);
+   margin: 0.5rem;
+}
+
+.comentario-form .btn {
+   margin: 1rem 2rem;
+}
+
+.comentario-form textarea{
+   margin: 2rem 0 0 2rem;
+   width: 100%;
+   height: 10rem;
+   border: none;
+   background-color: #eee;
+   border-radius: 1rem;
+   resize: none;
+   outline: none;
+   padding: .8rem;
+}
+
+.comentario-form .btn {
+   background-color: var(--laranja);
+   border-radius: 0.5rem;
+}
+
+.btn:hover {
+   opacity: .7;
+}
+
+.comentario {
+   align-items: flex-start;
+   margin: 1rem;
+   padding: .5rem;
+   font-size: var(--font-sm);
+   word-wrap: break-word;
+}
+
+.usuario {
+   display: flex;
+   align-items: center;
+}
+
+.usuario img {
+   width: 1.5rem;
+   height: 1.5rem;
+   border-radius: 50%;
+   margin: .5rem .5rem .5rem 0;
+}
+
+.usuario p {
+   font-weight: bold;
+   color: #222;
+}

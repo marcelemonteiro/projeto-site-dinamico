@@ -1,0 +1,43 @@
+.filmes {
+   position: relative;
+   
+}
+
+.cards {
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   grid-template-rows: repeat(5, 1r);
+   max-width: 65rem;
+   padding-top: 1rem;
+   margin: 0 auto;
+}
+
+.card {
+   max-width: 8rem;
+   background-color: #fff;
+   overflow: hidden;
+   text-align: center;
+   margin: 0.8rem auto;
+   font-size: var(--font-sm);
+   font-weight: 700;
+   border-radius: .5rem;
+   box-shadow: 2px 2px 8px #22222244;
+}
+
+.card a p{
+   color: #222;
+}
+
+.card img {
+   width: 8rem;
+   height: 12rem;
+}
+
+.card:hover img{
+   filter: grayscale(100%);
+}
+
+.card:hover {
+   opacity: .7;
+}
+

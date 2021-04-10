@@ -1,0 +1,58 @@
+.perfil {
+   position: relative;
+   z-index: 1;
+}
+
+.assistidos .titulo,
+.queroVer .titulo {
+   color: #222;
+   margin: 0 0 0 1rem;
+}
+
+.assistidos,
+.queroVer {
+   position: relative;
+}
+
+.perfil .btn {
+   margin-left: 1rem;
+   width: 5rem;
+   height: 1.5rem;
+   background-color: var(--cinza-claro);
+   color: var(--vermelho);
+   border: 1px solid var(--vermelho);
+   font-size: var(--font-sm);
+}
+
+.perfil .btn:hover {
+   color: var(--cinza-claro);
+   background-color: var(--vermelho);
+   border: 1px solid var(--cinza-claro);
+}
+
+.perfil__usuario {
+   background-color: var(--laranja);
+   position: inherit;
+}
+
+.perfil__usuario img {
+   width: 4rem;
+   height: auto;
+   border-radius: 50%;
+   margin: 1rem;
+}
+
+.perfil__usuario h1 {
+   color: var(--cinza-claro);
+   font-weight: 300;
+}
+
+.perfil .card {
+   width: 100%;
+}
+
+.assistidos.container-md {
+   margin-top: 2rem;
+   margin-bottom: 4rem;
+}
+

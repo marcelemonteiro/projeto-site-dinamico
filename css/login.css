@@ -1,0 +1,88 @@
+.poster {
+   width: 100%;
+   height: 40vh;
+   background-color: var(--laranja);
+}
+
+.titulo {
+   color: #eee;
+   text-transform: uppercase;
+   font-weight: 300;
+}
+
+.login-cadastro {
+   width: 100%;
+   position: relative;
+}
+
+.login-cadastro .btn {
+   background-color: var(--laranja);
+}
+
+.logo {
+   height: 30vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.logo .titulo {
+   color: var(--laranja);
+}
+
+.logo__img {
+   width: 2rem;
+   height: auto;
+   margin: 1rem;
+}
+
+.poster .logo__img {
+   filter: invert(100%) sepia(5%) saturate(253%) hue-rotate(204deg) brightness(111%) contrast(87%);
+}
+
+.logo .logo__img {
+   filter: invert(39%) sepia(99%) saturate(2791%) hue-rotate(347deg) brightness(90%) contrast(86%);
+}
+
+/* Switch login-cadastro */
+.switch {
+   width: 70%;
+   text-align: center;
+   margin: 3rem auto 1rem auto;
+}
+
+.switch p {
+   width: 50%;
+   padding: .3rem;
+   text-transform: uppercase;
+   font-size: var(--font-sm);
+   font-weight: 700;
+   cursor: pointer;
+   border-bottom: 2px solid var(--cinza-medio);
+   color: var(--cinza-medio);
+}
+
+.switch .on {
+   border-bottom: 2px solid var(--laranja);
+   color: var(--laranja);
+   transition: all 1s;
+}
+
+.login-cadastro input {
+   width: 14rem;
+   margin: .5rem;
+}
+
+.cadastro,
+.login {
+   opacity: 0;
+   position: absolute;
+   width: calc(100% - 3rem);
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+
+
+
+

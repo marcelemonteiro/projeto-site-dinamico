@@ -1,0 +1,57 @@
+.footer {
+   position: relative;
+   margin-top: 5rem;
+}
+
+.redes-sociais {
+   padding: 8rem 0;
+   background-color: var(--laranja);
+}
+
+.redes-sociais h1 {
+   font-size: 1.5rem;
+   color: #eee;
+   margin: 1rem 2rem 2rem 2rem;
+}
+
+.social-links i {
+   margin: 1rem 2rem;
+   font-size: 2rem;
+   color: #eee;
+}
+
+.social-links i:hover {
+   opacity: .6;
+}
+
+.footer-menu {
+   padding: 2rem;
+   background-color: #222;
+}
+
+.footer-menu .logo h1 {
+   margin: 1rem 0;
+   font-size: 2.5rem;
+   color: white;
+}
+
+.footer-links li {
+   margin: 2rem 0;
+}
+
+.footer-links a {
+   color: white;
+}
+
+.footer-links a:hover {
+   opacity: .6;
+}
+
+.footer p {
+   margin: 0;
+   padding: 0.5rem 0;
+   font-size: 0.8rem;
+   background-color: #111;
+   color: white;
+   text-align: center;
+}

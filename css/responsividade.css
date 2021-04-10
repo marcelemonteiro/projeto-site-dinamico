@@ -1,0 +1,112 @@
+/* Breakpoints up:
+ * Medium: 640px | 40em
+ * Large: 1024px | 64em
+ * Xlarge: 1400px | 87.5em 
+ */ 
+@media (min-width: 64em) {
+   .hide-for-desktop {
+      display: none;
+   }
+
+   .flex-s {
+      display: flex;
+      flex-direction: row;
+   }
+
+   .poster {
+      width: 50%;
+      height: 100vh;
+   }
+
+   .login-cadastro {
+      width: 50%;
+   }
+
+   .switch p {
+      width: 30%;
+  }
+
+   .background {
+      background: url(../img/aves-de-rapina.jpg) center no-repeat;
+      background-color: var(--laranja);
+      background-size: cover;
+      background-blend-mode: overlay;
+   }
+
+   .perfil__filmes {
+      margin-left: 0;
+   }
+
+   .card {
+      max-width: 11.375rem;
+      transition: all 1s;
+      font-size: 1rem;
+  }
+
+  .card img {
+      width: 11.375rem;
+      height: 16.75rem;
+  }
+
+  .filme__poster img {
+     width: 15rem;
+     height: auto;
+   }
+
+   .filme__trailer iframe {
+      max-width: 50rem;
+      max-height: 28rem;
+  }
+
+  .sorte {
+     height: 40vh;
+  }
+
+  .sorte__img {
+     width: 50%;
+     height: auto;
+  }
+
+}
+
+/* Breakpoints down: 
+ * Small: 639px | 39.9375em
+ * Medium: 1023px | 63.9375em
+ * Large: 1399px | 87.4375em
+ */
+
+@media (max-width: 63.9375em) {
+   .hide-for-mobile {
+      display: none;
+   }
+
+   .flex-s {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .perfil__dados {
+      justify-content: center;
+   }
+
+   .cards {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1r);
+   }
+
+   .comentario-form textarea {
+      width: 82%;
+      height: 16rem;
+   }
+}
+
+@media (max-width: 39.9375em) {
+
+   .cards {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1r);
+   }
+}
+
+
+

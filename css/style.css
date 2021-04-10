@@ -1,0 +1,194 @@
+@import url(login.css);
+@import url(header.css);
+@import url(filmes.css);
+@import url(perfil.css);
+@import url(filme.css);
+@import url(footer.css);
+@import url(home.css);
+@import url(responsividade.css);
+
+html {
+   font-size: 100%;
+   box-sizing: border-box;
+}
+
+* {
+   box-sizing: inherit;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   font-size: var(--font-sm);
+   line-height: 1.3;
+}
+
+body, input, button, select, textarea {
+   font-family: 'Noto Sans JP', sans-serif;
+}
+
+a { 
+   text-decoration: none; 
+}
+
+ul li { 
+   list-style: none; 
+}
+
+
+/* Variáveis
+--------------------------------- */
+:root {
+   /* Cores */
+   --laranja: #d64c2c;
+   --vermelho: #ec4b3a;
+   --cinza-claro: #eee;
+   --cinza-medio: #9698a6;
+   --azul-escuro: #2d314d;
+
+   /* Font Sizes */
+   --font-sm: 0.875rem; /* 14px */
+   --font-med: 1.125rem; /* 18px */
+   --font-lg: 1.5625rem; /* 25px */
+
+}
+
+
+/* Helper Classes
+--------------------------------- */
+/* Flex */
+.flex {
+   display: flex;
+}
+
+.flex-c {
+   display: flex;
+   flex-direction: column;
+}
+
+.flex-jc-sb {
+   justify-content: space-between;
+}
+
+.flex-jc-sa {
+   justify-content: space-around;
+}
+
+.flex-jc-c {
+   justify-content: center;
+}
+
+
+.flex-ai-c {
+   align-items: center;
+}
+
+/* Espaçamento */
+.container {
+   padding-left: 1.5rem;
+   padding-right: 1.5rem;
+}
+
+.container-sm {
+   max-width: 13rem;
+   margin: 1rem auto;
+}
+
+.container-md {
+   max-width: 65rem;
+   margin: 1rem auto;
+}
+
+.container-full {
+   width: 100%;
+   padding: 0;
+}
+
+
+
+/* Elementos
+--------------------------------- */
+.input {
+   height: 2rem;
+   padding: 0.5rem;
+   font-weight: 700;
+   background-color: var(--cinza-claro);
+   border: none;
+   outline: none;
+}
+
+.btn {
+   width: 14rem;
+   height: 2rem;
+   margin: .5rem;
+   padding: .2rem;
+   font-weight: 700;
+   color: var(--cinza-claro);
+   text-transform: uppercase;
+   background-color: var(--cinza-medio);
+   border: none;
+   cursor: pointer;
+}
+
+.disabled {
+   background-color: var(--laranja);
+}
+
+
+
+.msg-erro {
+   font-size: var(--font-sm);
+   color: var(--cinza-claro);
+   background-color: var(--vermelho);
+   padding: 1rem;
+   text-align: center;
+   grid-column: 1 / 6;
+   grid-row: 1 / 2;
+}
+
+
+/* Animações
+--------------------------------- */
+@keyframes fade-in {
+   from {
+      visibility: hidden;
+      opacity: 0;
+   }
+
+   1% {
+      visibility: visible;
+      opacity: 0;
+   }
+
+   to {
+      opacity: 1;
+   }
+}
+
+.fade-in {
+   animation: fade-in 400ms ease-in-out forwards;
+}
+
+@keyframes fade-out {
+   from {
+      visibility: visible;
+      opacity: 1;
+      z-index: 10;
+   }
+
+   99% {
+      visibility: visible;
+      opacity: 0;
+   }
+
+   to {
+      visibility: hidden;
+      opacity: 0;
+      z-index: 0;
+   }
+}
+
+.fade-out {
+   animation: fade-out 400ms ease-in-out forwards;
+}
+
