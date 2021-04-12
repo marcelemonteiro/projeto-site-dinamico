@@ -6,14 +6,14 @@
 <section class="filmes container">
     <div class="cards">
         <?php 
-        if ($_GET['error'] == 'filme-nao-encontrado') {
+        if (isset($_GET['error']) == 'filme-nao-encontrado') {
             echo "<p class='msg-erro'>Não temos este filme registrado ainda :/<p>";
         }
         $resultado = listarFilmes();
 
         if (count($resultado) == 0) {
             echo '<p class="msg-erro">Nenhum filme registrado :(</p>';
-        } else if (!$_GET['error']){
+        } else{
             foreach(listarFilmes() as $filme) {
         ?>
         <div class="card">

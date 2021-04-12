@@ -13,7 +13,7 @@ include('crud.php');
          
                if (count($resultado) == 0) {
                    echo '<p class="msg-erro">Nenhum filme :(</p>';
-               } else if (!$_GET['error']){
+               } else {
                    foreach(listaFilmesPorId($idFilme) as $filme) {
         ?>
       <div class="card">

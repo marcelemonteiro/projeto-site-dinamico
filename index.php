@@ -33,12 +33,9 @@
             <h1 class="titulo">Cineweb</h1>
          </div>
 
-         <?php
-         $status = $_GET['status'];
-         if (isset($status)) {
-            echo "<p class='msg-erro'>$status</p>";
-         }
-         ?>
+         <?php if(isset($_GET['status'])): ?>
+         <p class='msg-erro'><?php echo $_GET['status']; ?></p>
+         <?php endif; ?>
 
          <div class="switch flex flex-jc-c flex-ai-c on">
             <p id="s_login" class="on" >Login</p>

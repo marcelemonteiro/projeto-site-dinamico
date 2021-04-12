@@ -21,7 +21,8 @@ include './crud.php';
 
             if (count($resultado) == 0) {
                 echo '<p class="msg-erro">Nenhum filme :(</p>';
-            } else if (!$_GET['error']){
+            } else {
+               $i = 0;
                foreach(listaFilmesPorId($idFilme) as $filme) {
                   if($i == 4) {
                      break;
@@ -60,7 +61,8 @@ include './crud.php';
 
             if (count($resultado) == 0) {
                 echo '<p class="msg-erro">Nenhum filme :(</p>';
-            } else if (!$_GET['error']){
+            } else{
+               $j = 0;
                foreach(listaFilmesPorId($idFilme) as $filme) {
                   if($j == 4) {
                      break;
