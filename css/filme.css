@@ -116,3 +116,9 @@
    font-weight: bold;
    color: #222;
 }
+
+.usuario p > span {
+   font-size: var(--font-xsm);
+   margin-left: 0.5rem;
+   color: var(--cinza-medio);
+}

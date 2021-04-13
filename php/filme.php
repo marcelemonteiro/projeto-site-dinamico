@@ -81,7 +81,10 @@ foreach (listarJaAssisti($idUsuario) as $jaAssisti) {
       <div class="comentario">
          <div class="usuario">
             <img src="../img/user.jpg" alt="">
-            <p><?= $comentario['fk_usuario_login'] ?></p>
+            <p class="flex flex-ai-c">
+            <?= $comentario['fk_usuario_login'] ?>
+            <span><?= $comentario['data_comentario']?></span>
+            </p>
          </div>
          <p><?= $comentario['comentario'] ?></p>
       </div>
