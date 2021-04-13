@@ -37,16 +37,19 @@ include './crud.php';
                <p><?=$filme['nome']?></p>
             </a>
          </div>
-         <?php    
-            }
-            }
-         } 
-        ?>
+         
+        <?php if (count($resultado) > 0) : ?>
          <div class="card flex flex-ai-c flex-jc-c">
             <a href="./assistidos.php">
                <p>Ver mais</p>
             </a>
          </div>
+      <?php endif; ?>
+      <?php    
+            }
+            }
+         } 
+        ?>
       </div>
    </div>
 
@@ -76,6 +79,7 @@ include './crud.php';
                <p><?=$filme['nome']?></p>
             </a>
          </div>
+         
          <?php    
             }
             }
