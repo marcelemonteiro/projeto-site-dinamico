@@ -4,11 +4,13 @@
 ?>
 
 <section class="filmes container">
-    <div class="cards">
-        <?php 
+    <?php   
         if (isset($_GET['error']) == 'filme-nao-encontrado') {
             echo "<p class='msg-erro'>Não temos este filme registrado ainda :/<p>";
         }
+    ?>
+    <div class="cards">
+        <?php 
         $resultado = listarFilmes();
 
         if (count($resultado) == 0) {
